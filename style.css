@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+
+#inputhead {
+  background-color: lightPink;
+}
+#songhead {
+  background-color: lightBlue;
+}
+
+.translate {
+  display: inline-block;
+}
