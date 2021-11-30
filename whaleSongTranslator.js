@@ -25,12 +25,15 @@ const createWhaleSong = () => {
 }
 
 let elInput = document.getElementById('input');
-
 let elSong = document.getElementById('song');
-
+let elSongInput = document.getElementById('songInput');
 let elButton = document.getElementById('submit');
 
-elButton.onclick = function() {
+const submitSong = function() {
   elSong.textContent = createWhaleSong();
   elInput.textContent = input;
 }
+
+// elButton.onclick = submitSong;
+// elSongInput.addEventListener('keyup', submitSong);
+elButton.addEventListener('click', submitSong);
